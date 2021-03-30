@@ -12,7 +12,7 @@ namespace ConvertMinutes
             Console.WriteLine("How many minute(s) would you like to convert to seconds?");
             var input = int.Parse(Console.ReadLine());
             var result = ConvMin(input);
-            Console.WriteLine("The amount of seconds that amount of minute(s) is : {0}", result);
+            Console.WriteLine("The amount of seconds that {0} minute(s) is : {1}", input, result);
             Console.ReadLine();
         }
     }

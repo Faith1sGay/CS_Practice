@@ -31,7 +31,11 @@ namespace HypixelCLI
             {
                 case 1:
                     var qc = api.GetUserByPlayerName(user);
-                    Console.WriteLine(qc.Player.LastLogin);
+                    Console.WriteLine("User : {0}\nFirst time logged into QuakeCraft : {1}\nLast time logged into QuakeCraft : {2}\nTotal QuakeCraft Kills : {3}\nTo", user, qc.Player.FirstLogin, qc.Player.LastLogin, qc.Player.Stats.Quake.Kills);
+                    break;
+                case 2:
+                    var walls = api.GetUserByPlayerName(user);
+                    Console.WriteLine("User : {0}\nFirst time logged into Walls : {1}\nLast time logged into Walls : {2}\nTotal Walls Kills : {3}", user, walls.Player.FirstLogin, walls.Player.LastLogin, walls.Player.Stats.Walls.Kills);
                     break;
             }
         }

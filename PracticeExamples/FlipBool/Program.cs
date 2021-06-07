@@ -14,9 +14,9 @@ namespace FlipBool
         {
             Console.WriteLine("What is the boolean you would like to be flipped?");
             var a = Console.ReadLine();
-            bool b;
-            var c = bool.TryParse(a, out b);
-            Console.WriteLine(Flip(b));
+            if (bool.TryParse(a, out bool b)) Console.WriteLine(Flip(b));
+            else throw new ArgumentException("Value given was not a valid boolean.");
+            Console.ReadKey();
         }
     }
 }

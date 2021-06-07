@@ -14,7 +14,7 @@ namespace LessThan100
             var a = int.Parse(Console.ReadLine());
             Console.Write("What is your second number? ");
             var b = int.Parse(Console.ReadLine());
-            Console.Write($"Is {a} + {b} larger or smaller than 100?\n{LessThan100(a, b)}");
+            Console.Write($"Is {a} + {b} smaller than 100?\n{LessThan100(a, b)}");
         }
     }
 }

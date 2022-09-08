@@ -1,12 +1,16 @@
 ﻿using System;
+
 namespace EvenOrOddDetector
 {
-    sealed class Program
+    // Started on 2021.03, finished on 2022.09
+    internal sealed class Program
     {
-        static string IsEvenOrOdd(int x)
+        private static string IsEvenOrOdd(int x)
         {
-            object h = x / 2;
-            
+            if (x % 2 == 0) return "Even.";
+            else return "Odd.";
         }
+
+        private static void Main() => Console.WriteLine(IsEvenOrOdd(int.Parse(Console.ReadLine())));
     }
 }

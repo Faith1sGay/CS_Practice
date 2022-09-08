@@ -2,15 +2,16 @@
 
 namespace ReturnSomething
 {
-    class Program
+    internal class Program
     {
-        static string ReturnSomething(string x)
+        private static string ReturnSomething(string x)
         {
             return "Something " + x;
         }
-        static void Main()
+
+        private static void Main()
         {
-           var x =  ReturnSomething(Console.ReadLine());
+            var x = ReturnSomething(Console.ReadLine());
             Console.WriteLine(x);
         }
     }

@@ -6,8 +6,7 @@ namespace FlipBool
     {
         internal static bool Flip(bool x)
         {
-            if (x) return false;
-            else return true;
+            return !x;
         }
 
         private static void Main()

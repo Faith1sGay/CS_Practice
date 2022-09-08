@@ -1,13 +1,15 @@
 ﻿using System;
+
 namespace LessThan100
 {
-    static class Program
+    // Updated on 2022.09.08
+    internal static class Program
     {
         internal static bool LessThan100(int x, int y)
         {
-            if (x + y < 100) return true;
-            else return false;
+            return x + y < 100;
         }
+
         internal static void Main()
         {
             Console.Write("What is your first number? ");

@@ -1,0 +1,1 @@
+This folder is for practice problems that I've found online and stuff.
